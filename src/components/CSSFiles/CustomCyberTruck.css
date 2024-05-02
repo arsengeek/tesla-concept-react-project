@@ -1,7 +1,12 @@
+a {
+    margin: 0;
+}
+
+
 .custom-block {
     position: absolute;
     width: 100%;
-    height: 50vw;
+    height: 60vw;
     margin-top: 25vw;
     background-color: black;
 }
@@ -10,7 +15,7 @@
     height: 35vw;
     position: absolute;
     background-color: transparent;
-    margin-left: 5vw;
+    margin-left: 0vw;
 }
 .text-color {
     width: 28vw;
@@ -31,6 +36,7 @@
     font-family: Nunito;
     margin-top: 3vw;
     margin-left: -5vw;
+    width: 30vw;
 
 }
 .text-container span {
@@ -41,18 +47,24 @@
     margin-left: 0vw;
     
 }
-.text-container span span{
+.text-container span span {
     font-size: 1vw;
     font-weight: 700;
     font-family: Nunito;
     margin-top: 3vw;
-    margin-left: 8vw;
+    margin-left: 10vw;
     color: rgb(116, 116, 116);
 }
-
-
+.qr-code {
+    margin:2vw -10vw
+}
 .text-container a {
     color: rgb(40, 40, 255);
+
+}
+.text-container span a {
+    margin-top:-1.25vw;
+    margin-left:4.5vw
 }
 .displayColor {
     position: absolute;
@@ -90,11 +102,38 @@
     margin: 0 1vw;
     border: 1px solid white
 }
+.black {
+    background-color: rgba(0, 0, 0, 0.801);
+    width: 1vw;
+    height: 1vw;
+    border:0cap;
+    cursor: pointer;
+    margin: 0 1vw;
+    border: 1px solid white
+}
+.white {
+    background-color: rgb(255, 255, 255);
+    width: 1vw;
+    height: 1vw;
+    border:0cap;
+    cursor: pointer;
+    margin: 0 1vw;
+    border: 1px solid rgb(255, 255, 255)
+}
+.gold {
+    background-color: rgb(197, 151, 0);
+    width: 1vw;
+    height: 1vw;
+    border:0cap;
+    cursor: pointer;
+    margin: 0 1vw;
+    border: 1px solid rgb(255, 255, 255)
+}
 .red-tesla.default {
     position: absolute;
-    width: 80%;
-    height: 45vw;
-    z-index: 2;
+    width: 100%;
+    height: 50vw;
+    z-index: 0;
     
     opacity: 0;
     background-image: url('src/assets/Satin-Crimson-Red-CT.avif');
@@ -106,8 +145,8 @@
 
 .red-tesla.active {
     position: absolute;
-    width: 80%;
-    height: 45vw;
+    width: 100%;
+    height: 50vw;
     z-index: 2;
     opacity: 1;
     background-image: url('src/assets/Satin-Crimson-Red-CT.avif');
@@ -115,12 +154,19 @@
     background-repeat: no-repeat;
     background-size: cover;
     transition:.3s ease-in-out;
+    cursor:zoom-in
+}
+.red-tesla:active {
+    width: 160%;
+    height: 50vw;
+    background-color: black;
+    cursor:zoom-out
 }
 .purple-tesla.default {
     position: absolute;
-    width: 80%;
-    height: 45vw;
-    z-index: 2;
+    width: 100%;
+    height: 50vw;
+    z-index: 0;
 
     opacity: 0;
     background-image: url('src/assets/Iridescent-Purple-CT.avif');
@@ -132,22 +178,28 @@
 
 .purple-tesla.active {
     position: absolute;
-    width: 80%;
-    height: 45vw;
+    width: 100%;
+    height: 50vw;
     z-index: 2;
     opacity: 1;
     background-image: url('src/assets/Iridescent-Purple-CT.avif');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    cursor:zoom-in;
     transition:.3s ease-in-out;
 }
-
+.purple-tesla:active {
+    width: 160%;
+    height: 50vw;
+    background-color: black;
+    cursor:zoom-out
+}
 .blue-tesla.default {
     position: absolute;
-    width: 80%;
-    height: 45vw;
-    z-index: 2;
+    width: 100%;
+    height: 50vw;
+    z-index: 0;
 
     opacity: 0;
     background-image: url('src/assets/Satin-Abyss-Blue-CT.avif');
@@ -159,14 +211,115 @@
 
 .blue-tesla.active {
     position: absolute;
-    width: 80%;
-    height: 45vw;
+    width: 100%;
+    height: 50vw;
     z-index: 2;
     opacity: 1;
     background-image: url('src/assets/Satin-Abyss-Blue-CT.avif');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    transition:.3s ease-in-out;cursor:zoom-in
+}
+.blue-tesla:active {
+    width: 160%;
+    height: 50vw;
+    background-color: black;
+    cursor:zoom-out
+}
+.black-tesla.default {
+    position: absolute;
+    width: 100%;
+    height: 50vw;
+    z-index: 0;
+
+    opacity: 0;
+    background-image: url('src/assets/Satin-Stealth-Black-CT.avif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     transition:.3s ease-in-out;
 }
 
+.black-tesla.active {
+    position: absolute;
+    width: 100%;
+    height: 50vw;
+    z-index: 2;
+    opacity: 1;
+    background-image: url('src/assets/Satin-Stealth-Black-CT.avif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition:.3s ease-in-out;cursor:zoom-in
+}
+.black-tesla:active {
+    width: 160%;
+    height: 50vw;
+    background-color: black;
+    cursor:zoom-out
+}
+.white-tesla.default {
+    position: absolute;
+    width: 100%;
+    height: 50vw;
+    z-index: 0;
+
+    opacity: 0;
+    background-image: url('src/assets/Satin-Ceramic-White-CT.avif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition:.3s ease-in-out;
+}
+
+.white-tesla.active {
+    position: absolute;
+    width: 100%;
+    height: 50vw;
+    z-index: 2;
+    opacity: 1;
+    background-image: url('src/assets/Satin-Ceramic-White-CT.avif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition:.3s ease-in-out;cursor:zoom-in
+}
+.white-tesla:active {
+    width: 160%;
+    height: 50vw;
+    background-color: black;
+    cursor:zoom-out
+}
+.gold-tesla.default {
+    position: absolute;
+    width: 100%;
+    height: 50vw;
+    z-index: 0;
+
+    opacity: 0;
+    background-image: url('src/assets/Satin-Rose-Gold-CT.avif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition:.3s ease-in-out;
+}
+
+.gold-tesla.active {
+    position: absolute;
+    width: 100%;
+    height: 50vw;
+    z-index: 2;
+    opacity: 1;
+    background-image: url('src/assets/Satin-Rose-Gold-CT.avif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition:.3s ease-in-out;cursor:zoom-in
+}
+.gold-tesla:active {
+    width: 160%;
+    height: 50vw;
+    background-color: black;
+    cursor:zoom-out
+}
