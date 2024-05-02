@@ -1,0 +1,60 @@
+.back-video {
+    
+    position: absolute;
+    width: 100%;
+    height: 55.8vw;
+    z-index: -1;
+}
+
+
+.block-registration {
+    position: absolute;
+    z-index: 0;
+    background-color: white;
+    width: 100%;
+    height: 55.8vw;
+    margin-top: 138vw;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px black;
+    
+}
+.grid-container {
+    margin-left: 40vw;
+    margin-right: 40vw;
+    margin-top: 4vw;
+    text-align: center;
+    font-size: 1vw;
+    font-weight: 600;
+    font-family: Nunito;
+    text-shadow: 0 0 10px black;
+}
+.text-input {
+    font-weight: 600;
+    font-family: Nunito;
+    height: 2vw;
+    border: 0;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+.login-form {
+    font-size: 2vw;
+    margin-top: 17vw;
+    text-align: center;
+    text-shadow: 0 0 5px black;
+    font-weight: 600;
+    font-family: Nunito;
+}
+.button-login {
+    border: 0;
+    padding: 0;
+    width: 7vw;
+    height: 2vw;
+    border-radius: 10% 40% 10% 40%;
+    margin-left: 6vw;
+    margin-top: 1vw;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    font-weight: 600;
+    font-family: Nunito;
+    transition: .05s ease-in;
+}

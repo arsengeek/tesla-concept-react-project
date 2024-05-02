@@ -1,0 +1,52 @@
+.cyberTruck-block {
+    width: 100vw;
+    height: 56.5vw;
+    margin-top: 193.5vw;
+    background-image: url(/src/assets/cybertruck-image-official.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+}
+.text-cybertruck {
+    position: absolute;
+    width:35vw;
+    height: 12vw;
+    margin-top: 2vw;
+    margin-left: 31.5vw;
+    background-image: url(/src/assets/1280px-Cybertrucklogo.svg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: 1;
+}
+.order-text {
+    position: absolute;
+    width: 15vw;
+    height: 2.5vw;
+    font-size: .9vw;
+    font-family: Nunito;
+    font-weight: 400;
+    padding: 0%;
+    border: 0cap;
+    border-radius: 15%;
+    margin-top: 50vw;
+    margin-left: 32vw;
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+.learn-text {
+    position: absolute;
+    width: 15vw;
+    height: 2.5vw;
+    font-size: .9vw;
+    font-family: Nunito;
+    font-weight: 600;
+    padding: 0%;
+    border: 0cap;
+    border-radius: 15%;
+    margin-top: 50vw;
+    margin-left: 52vw;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
