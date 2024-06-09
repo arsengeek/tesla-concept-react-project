@@ -1,0 +1,448 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+.menu-mobile {z-index: -2;
+position: absolute;}
+.dropdown-container {
+
+    width: 1500vw;
+    height: 20vw;
+}
+.drop-menu {
+    width: 5vw;
+    height: 1vw;
+    margin-top: 2vw;
+    color: white;
+    background-color: transparent;
+    font-family: Nunito;
+    margin-left: 5vw;
+    font-size: .9vw;
+    font-weight: 700;
+    padding: 0;
+    border: 0;
+    text-shadow: 1px 1px 1px black;
+    z-index: 2;
+}
+
+.headerLogo {
+    position: fixed;
+    margin-left: 47%;
+    height: 4vw;
+    filter: drop-shadow(0px 0px 4px white);
+    z-index: 1;
+}
+.buttons-menu {
+    opacity: 1;
+    z-index: 2;
+}
+.drop-menu:hover {
+    text-shadow: 0px 0px 10px white;
+}
+.navigation.active {
+    opacity: 1;
+    transition: .3s ease-in;
+}
+.navigation-energy.active {
+    opacity: 1;
+    transition: .3s ease-in;
+}
+.navigation-charging.active {
+    opacity: 1;
+    transition: .3s ease-in;
+}
+.navigation-discover.active{
+    opacity: 1;
+    transition: .3s ease-in;
+}
+.navigation{
+    height: 20vw;
+    position:absolute;
+    margin-top: 1vw;
+    margin-left: 1vw;
+    width: 98%;
+    background-color:  white;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: auto 1fr; 
+    align-items: center;
+    opacity: 0;
+    transition: .3s ease-in; 
+}
+.navigation-energy {
+    height: 20vw;
+    position:absolute;
+    margin-top: 1vw;
+    margin-left: 1vw;
+    width: 98%;
+    background-color:  white;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: auto 1fr; 
+    align-items: center;
+    opacity: 0;
+    transition: .3s ease-in;
+}
+.navigation-charging { 
+    height: 20vw;
+    position:absolute;
+    margin-top: 1vw;
+    margin-left: 1vw;
+    width: 98%;
+    background-color:  white;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: auto 1fr; 
+    align-items: center;
+    opacity: 0;
+    transition: .3s ease-in;
+}
+.navigation-discover {
+    height: 20vw;
+    position:absolute;
+    margin-top: 1vw;
+    margin-left: 1vw;
+    width: 98%;
+    background-color:  white;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap:0px;
+    align-items: center;
+    opacity: 0;
+    transition: .3s ease-in;
+}
+.menu-list {
+    width: 80%;
+    margin-top: 1vw;
+    display: grid;
+    list-style-type: none;
+    color: transparent;
+    grid-template-columns: repeat(4, 1fr);
+    gap:100px
+}
+.menu-list1 {
+    width: 70%;
+    margin-top: 1vw;
+    display: grid;
+    list-style-type: none;
+    color: transparent;
+    grid-template-columns: repeat(4, 1fr);
+    gap:70px
+}
+.menu-list2 {
+    width: 70%;
+    margin-top: 1vw;
+    display: grid;
+    list-style-type: none;
+    color: transparent;
+    grid-template-columns: repeat(3, 1fr);
+    gap:70px
+}
+
+.menu-items {
+    font-family: Nunito;
+    font-size: 1vw;
+    font-weight: 400;
+}
+
+.tesla_a {
+    opacity: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    color:black;
+    font-family: Nunito;
+    font-size: 0.8vw;
+    font-weight: 600;
+    margin-left: 25px;
+    margin-top: 5vw;
+    transition: .2s ease-in-out ;
+}
+.tesla_a.active {
+    opacity: 1;
+    margin-top: 0vw;
+}
+
+.enegry {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    color:black;
+    font-family: Nunito;
+    font-size: 0.8vw;
+    font-weight: 600;
+    margin-left: 25px;
+}
+.solar-panel {
+    z-index: 2;
+    width: 10vw;
+    height: 8vw;
+}
+.solar-roof {
+    z-index: 2;
+    width: 10vw;
+    height: 8vw;
+    margin-right: 15px;
+}
+.powerwall {
+    z-index: 2;
+    width: 5vw;
+    height: 8vw;
+    margin-left: 20px;
+    filter: drop-shadow(0px 0px 5px black);
+}
+.megapack{
+    z-index: 2;
+    width: 12vw;
+    height: 6vw;
+    margin-left: 0px;
+    margin-top: 1.5vw;
+    
+}
+.charging {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    color:black;
+    font-family: Nunito;
+    font-size: 1vw;
+    font-weight: 600;
+    margin-left: 25px;
+}
+.charging-img {
+    z-index: 2;
+    width: 15vw;
+    height: 10vw;
+}
+.super-charging {
+    z-index: 2;
+    width: 9vw;
+    height: 10vw;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    color:rgb(41, 41, 41);
+    font-family: Nunito;
+    font-size: 0.8vw;
+    font-weight: 400;
+}
+.menu-items-top-margin {
+    grid-row-start: 2;
+}
+.model_s_img {
+    z-index: 2;
+    width: 10vw;
+    height: 5vw;
+}
+.model_3_img {
+    z-index: 2;
+    width: 10vw;
+    height: 5vw;
+}
+.model_x_img {
+    z-index: 2;
+    width: 10vw;
+    height: 5vw;
+}
+.model_y_img {
+    z-index: 2;
+    width: 10vw;
+    height: 5vw;
+}
+.model_cybertruck_img {
+    z-index: 2;
+    width: 10vw;
+    height: 5vw;
+}
+.menu-list-support {
+    display: grid;
+    grid-template-columns: repeat(1, 4fr);
+    font-family: Nunito;
+    font-size: 1vw;
+    font-weight: 400;
+
+    cursor: pointer;
+
+}
+.menu-items-support {
+    color: black;
+    list-style-type: none;
+    cursor: pointer;
+    transition: .2s ease-in;
+    margin: 5px;
+}
+.menu-items-support:hover {
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+.menu-list-discover {
+    display: grid;
+    margin-left: 10vw;
+    font-family: Nunito;
+    font-size: 1vw;
+    font-weight: 400;
+    margin-top: -2vw;
+    cursor: pointer; 
+}
+.menu-items-support-title {
+    color: rgb(46, 46, 46);
+    list-style-type: none;
+    cursor: pointer;
+    transition: .2s ease-in;
+    margin: 20px;
+    font-size: 0.8vw;
+    
+}
+.grid-container-mobile {
+    visibility: hidden;
+}
+@media only screen and  (max-width: 768px) {
+
+    .grid-container-mobile {
+        visibility:visible;
+    }
+    .navigation{
+        height: 0vw;
+        position:absolute;
+        margin-top: 1vw;
+        margin-left: 1vw;
+        width: 0%;
+        background-color:  white;
+        border-radius: 20px;
+        display: grid;
+        grid-template-columns: auto 1fr; 
+        align-items: center;
+        opacity: 0;
+        transition: .3s ease-in; 
+    }
+
+    .headerLogo {
+        visibility: hidden;
+        opacity: 0;
+        z-index: -1;
+    }
+    .menu-mobile {z-index: 2;
+        position: absolute;}
+    .logoMobile {
+        display: flex;
+        justify-content: center;
+        margin-left: 43vw;
+        width: 50%;
+        height: 20vw;
+        z-index: 3;
+        background-image: url('src/assets/tesla.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .logoMobileVersion {
+        position: fixed;
+        z-index: 2;
+        width: 20%;
+        height: 20vw;
+        margin-left: 80vw;
+        transition: .2s ease-in;
+        background-image:url('src/assets/Без имени-1.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        opacity: 1;
+    }
+    .logoMobileVersion.active {
+        position: fixed;
+        z-index: -1;
+        width: 100%;
+        height: 160vw;
+        margin-left: 1vw;
+        transition: .2s ease-in;
+        background-color:white;
+        opacity: 0;
+        
+    }
+    .buttons-menu {
+        opacity: 0;
+        z-index: 2;
+    }
+    .dropdown-container {
+
+        width: 0vw;
+        height: 0vw;
+    }
+    .menu-items-support {
+        width: 0%;
+        margin: 0;
+    }
+    .menu-list-support {
+       width: 0%;
+    }
+    .headerLogo {
+        position: fixed;
+        opacity: 0;
+        margin-left: 30%;
+        height: 2vw;
+        filter: drop-shadow(0px 0px 4px white);
+        z-index: 1;
+    }
+    .backdrop {
+        position: fixed;
+        display: flex;
+        width: 100%;
+        height: 80vw;
+        margin-top: 140vw;
+        z-index: 3;
+        transition: .1s ease-in;
+        background-color: rgb(155, 155, 155);
+        color: black;
+        font-size: 10vw;
+        align-items:center;
+        justify-content: center;
+    }
+    .menu-mobile {
+        position:absolute;
+        width: 100%;
+        height: 200vw;
+        z-index: -1;
+        opacity: 0;
+        margin-left: 100vw;
+        background-color: rgb(163, 163, 163);
+        transition: .1s ease-in;
+    }
+    .menu-mobile.active {
+
+        position: fixed;
+        width: 100%;
+        height: 240vw;
+        z-index: 3;
+        opacity: 1;
+        margin-left: 0vw;
+        background-color: white;
+        transition: .1s ease-in;
+    }
+    .grid-container-mobile {
+        display: grid;
+        margin-top: 10vw;
+        margin-left: 2vw; 
+    }
+    .menu-mobile li {
+        font-size: 5vw;
+        color: black;
+        list-style-type: none;
+        margin-top: 10vw;
+        margin-left: 2vw; 
+        font-family: Nunito;
+        font-weight: 700;
+    }
+
+}

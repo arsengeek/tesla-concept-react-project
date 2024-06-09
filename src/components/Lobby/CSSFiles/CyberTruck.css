@@ -1,0 +1,196 @@
+.cyberTruck-block {
+    width: 100vw;
+    height: 56.5vw;
+    margin-top: 193.5vw;
+    background-image: url(/src/assets/cybertruck-image-official.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+}
+.text-cybertruck {
+    position: absolute;
+    width:35vw;
+    height: 12vw;
+    margin-top: 2vw;
+    margin-left: 31.5vw;
+    background-image: url(/src/assets/1280px-Cybertrucklogo.svg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: 1;
+
+
+}
+.order-text {
+    position: absolute;
+    width: 15vw;
+    height: 2.5vw;
+    font-size: .9vw;
+    font-family: Nunito;
+    font-weight: 400;
+    padding: 0%;
+    border: 0cap;
+    border-radius: 15%;
+    margin-top: 50vw;
+    margin-left: 32vw;
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+.learn-text {
+    position: absolute;
+    width: 15vw;
+    height: 2.5vw;
+    font-size: .9vw;
+    font-family: Nunito;
+    font-weight: 600;
+    padding: 0%;
+    border: 0cap;
+    border-radius: 15%;
+    margin-top: 50vw;
+    margin-left: 52vw;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+@media only screen and (max-width:768px) {
+    .text-cybertruckMobile {
+        position: absolute;
+        width:35vw;
+        height: 12vw;
+        margin-top: -202vw;
+        margin-left: 31.5vw;
+        background-image: url(/src/assets/1280px-Cybertrucklogo2.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        z-index: 1;
+        opacity: 0;
+        transition: 5s ease;
+    }
+
+    .text-cybertruck {
+        position: absolute;
+        width:35vw;
+        height: 12vw;
+        margin-top: 2vw;
+        margin-left: 31.5vw;
+        background-image: url(/src/assets/1280px-Cybertrucklogo.svg.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        z-index: 1;
+        visibility: hidden;
+    
+    }
+    .text-cybertruckMobile.active {
+        position: absolute;
+        width:65vw;
+        height: 32vw;
+        margin-top: -132vw;
+        margin-left: 18vw;
+        background-image: url(/src/assets/1280px-Cybertrucklogo2.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        z-index: 1;
+        opacity: 1;
+        transition: 5s ease;
+
+    }
+    .cyberTruck-block {
+        width: 100vw;
+        height: 126.5vw;
+        margin-top: 380vw;
+        background-color:black;
+        z-index: -1;
+        background-image: url(src/assets/t);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        animation-name: remote-back;
+        animation-duration: 5s;
+    }
+
+
+    .order-text-mobile{
+        width: 55vw;
+        height: 15vw;
+        z-index: 1;
+        padding: 0;
+        border: 0;
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        margin-top: 30vw;
+        margin-left:4vw;
+        border-radius:40% 20% 40% 20%;
+        font-size: 5vw;
+        font-family: Nunito;
+        font-weight: 600;
+    }
+    
+    .mobileAnimation {
+        width: 130vw;
+        height: 126.5vw;
+        margin-left: -15vw;
+        z-index: -1;
+        background-image: url(src/assets/tesla-cybertruck-Photoroom.png-Photoroom.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        transition: .5s ease-in;
+    }
+    .mobileAnimation.active {
+        width: 130vw;
+        height: 126.5vw;
+        margin-left: -15vw;
+
+        z-index: -1;
+        background-image: url(src/assets/tesla-cybertruck-official.webp);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        animation-name: remote;
+        animation-duration: 5s;
+        transition: .5s ease-in;
+    }}
+    @keyframes remote {
+       0%{
+        margin-left: -15vw;
+        background-image: url(src/assets/tesla-cybertruck-Photoroom.png-Photoroom.png);
+       }
+       25%{
+        background-image: url(src/assets/tesla-cybertruck-Photoroom.png-Photoroom.png);
+        margin-left: -100vw;
+        opacity: 0;
+       }
+       50%{
+        background-image: url(src/assets/tesla-cybertruck-official-Photoroom.png-Photoroom.png);
+        margin-left: 120vw;
+        opacity: 0;
+       }
+
+       90%{
+        margin-left: -15vw;
+        opacity: 1;
+        background-image: url(src/assets/tesla-cybertruck-official-Photoroom.png-Photoroom.png);
+       } 
+       100%{
+        margin-left: -15vw;
+        opacity: 1;
+        background-image: url(src/assets/tesla-cybertruck-official.webp);
+       } 
+        
+    }
+    /* @keyframes remote-back {
+        0%{
+            visibility: hidden;
+            background-image: url();
+            background-color: black;
+            width:100vw;
+            opacity: 0;
+        }
+        100%{
+            visibility: visible;
+        }
+    } */

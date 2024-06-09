@@ -1,0 +1,105 @@
+.logoMobile {
+    display: flex;
+    justify-content: center;
+    margin-left: 43vw;
+    width: 50%;
+    height: 20vw;
+    z-index: 3;
+    background-image: url('src/assets/tesla.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logoMobileVersion {
+    position: fixed;
+    z-index: 2;
+    width: 20%;
+    height: 20vw;
+    margin-left: 1vw;
+    transition: .2s ease-in;
+    background-image:url('src/assets/Без имени-1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+}
+.logoMobileVersion.active {
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 160vw;
+    margin-left: 1vw;
+    transition: .2s ease-in;
+    background-color:white;
+    opacity: 0;
+    
+}
+.dropdown-container {
+
+    width: 0vw;
+    height: 0vw;
+}
+.menu-items-support {
+    width: 0%;
+    margin: 0;
+}
+.menu-list-support {
+   width: 0%;
+}
+.headerLogo {
+    position: fixed;
+    opacity: 0;
+    margin-left: 30%;
+    height: 2vw;
+    filter: drop-shadow(0px 0px 4px white);
+    z-index: 1;
+}
+.backdrop {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 80vw;
+    margin-top: 140vw;
+    z-index: 3;
+    transition: .1s ease-in;
+    background-color: rgb(155, 155, 155);
+    color: black;
+    font-size: 10vw;
+    align-items:center;
+    justify-content: center;
+}
+.menu-mobile {
+    position:absolute;
+    width: 100%;
+    height: 200vw;
+    z-index: -1;
+    opacity: 0;
+    margin-left: 100vw;
+    background-color: rgb(163, 163, 163);
+    transition: .1s ease-in;
+}
+.menu-mobile.active {
+
+    position: fixed;
+    width: 100%;
+    height: 240vw;
+    z-index: 3;
+    opacity: 1;
+    margin-left: 0vw;
+    background-color: white;
+    transition: .1s ease-in;
+}
+.grid-container-mobile {
+    display: grid;
+    margin-top: 10vw;
+    margin-left: 2vw; 
+}
+.menu-mobile li {
+    font-size: 5vw;
+    color: black;
+    list-style-type: none;
+    margin-top: 10vw;
+    margin-left: 2vw; 
+    font-family: Nunito;
+    font-weight: 700;
+}
